@@ -1,0 +1,68 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LightNow — one runtime for every AI client</title>
+  <desc id="desc">Discover trusted MCP servers, manage one runtime, and connect every AI client</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05141e"/>
+      <stop offset="0.58" stop-color="#092f3b"/>
+      <stop offset="1" stop-color="#0b5d68"/>
+    </linearGradient>
+    <radialGradient id="cyan-glow" cx="0" cy="0" r="1" gradientTransform="translate(215 282) rotate(90) scale(315)">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#67e8f9" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" rx="28" fill="url(#background)"/>
+  <rect width="1280" height="640" rx="28" fill="url(#cyan-glow)"/>
+  <path d="M0 500 C238 430 425 560 672 481 C902 408 1081 441 1280 350 V640 H0 Z" fill="#06b6d4" opacity="0.075"/>
+  <path d="M770 0 H1280 V506 Z" fill="#f59e0b" opacity="0.04"/>
+  <circle cx="1170" cy="116" r="170" fill="none" stroke="#67e8f9" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="1170" cy="116" r="112" fill="none" stroke="#f59e0b" stroke-opacity="0.08" stroke-width="2"/>
+
+  <g transform="translate(82 164) scale(1.55)">
+    <circle cx="96" cy="96" r="73" fill="#061b26" stroke="#94a3b8" stroke-opacity="0.38" stroke-width="4"/>
+    <g fill="none" stroke-linecap="round" transform="rotate(135 96 96)">
+      <circle cx="96" cy="96" r="54" stroke="#06b6d4" stroke-width="10" stroke-dasharray="254.47 84.82"/>
+      <circle cx="96" cy="96" r="41" stroke="#f59e0b" stroke-width="10" stroke-dasharray="193.21 64.40" opacity="0.95"/>
+      <circle cx="96" cy="96" r="28" stroke="#f43f5e" stroke-width="10" stroke-dasharray="131.95 43.98" opacity="0.95"/>
+    </g>
+    <circle cx="96" cy="96" r="12" fill="#06b6d4"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="425" y="132" fill="#67e8f9" font-size="27" font-weight="700" letter-spacing="9">LIGHTNOW</text>
+    <text x="416" y="240" fill="#ffffff" font-size="82" font-weight="760" letter-spacing="-2">ONE RUNTIME.</text>
+    <text x="416" y="328" fill="#ffffff" font-size="82" font-weight="760" letter-spacing="-2">EVERY AI CLIENT.</text>
+    <text x="421" y="389" fill="#cbd5e1" font-size="27" font-weight="450">Trusted servers. One profile. Every client.</text>
+
+    <rect x="421" y="432" width="618" height="2" rx="1" fill="url(#line)"/>
+    <g font-size="18" font-weight="700" letter-spacing="1.5">
+      <text x="421" y="475" fill="#67e8f9">DISCOVER</text>
+      <text x="555" y="475" fill="#64748b">→</text>
+      <text x="608" y="475" fill="#fde68a">MANAGE</text>
+      <text x="733" y="475" fill="#64748b">→</text>
+      <text x="786" y="475" fill="#fda4af">CONNECT</text>
+    </g>
+
+    <g font-size="17" font-weight="650">
+      <rect x="421" y="520" width="104" height="42" rx="21" fill="#082d38" stroke="#06b6d4" stroke-opacity="0.42"/>
+      <text x="473" y="547" fill="#d5f8fc" text-anchor="middle">Codex</text>
+      <rect x="537" y="520" width="114" height="42" rx="21" fill="#082d38" stroke="#06b6d4" stroke-opacity="0.42"/>
+      <text x="594" y="547" fill="#d5f8fc" text-anchor="middle">Claude</text>
+      <rect x="663" y="520" width="108" height="42" rx="21" fill="#082d38" stroke="#06b6d4" stroke-opacity="0.42"/>
+      <text x="717" y="547" fill="#d5f8fc" text-anchor="middle">Cursor</text>
+      <rect x="783" y="520" width="114" height="42" rx="21" fill="#082d38" stroke="#06b6d4" stroke-opacity="0.42"/>
+      <text x="840" y="547" fill="#d5f8fc" text-anchor="middle">VS Code</text>
+      <rect x="909" y="520" width="112" height="42" rx="21" fill="#082d38" stroke="#06b6d4" stroke-opacity="0.42"/>
+      <text x="965" y="547" fill="#d5f8fc" text-anchor="middle">Gemini</text>
+      <rect x="1033" y="520" width="150" height="42" rx="21" fill="#082d38" stroke="#06b6d4" stroke-opacity="0.42"/>
+      <text x="1108" y="547" fill="#d5f8fc" text-anchor="middle">Antigravity</text>
+    </g>
+  </g>
+</svg>
