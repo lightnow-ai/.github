@@ -1,0 +1,46 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LightNow CLI social preview</title>
+  <desc id="desc">LightNow CLI: MCP discovery and client configuration sync</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061823"/>
+      <stop offset="0.58" stop-color="#0a3440"/>
+      <stop offset="1" stop-color="#0e5f6a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(232 320) rotate(90) scale(285)">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="640" rx="28" fill="url(#background)"/>
+  <rect width="1280" height="640" rx="28" fill="url(#glow)"/>
+  <path d="M0 522 C230 460 393 560 620 496 C850 431 1034 468 1280 374 V640 H0 Z" fill="#06b6d4" opacity="0.07"/>
+  <path d="M735 0 L1280 0 L1280 545 Z" fill="#f59e0b" opacity="0.035"/>
+
+  <g transform="translate(104 192) scale(1.34)">
+    <circle cx="96" cy="96" r="72" fill="#071f2a" stroke="#94a3b8" stroke-opacity="0.42" stroke-width="4"/>
+    <g fill="none" stroke-linecap="round" transform="rotate(135 96 96)">
+      <circle cx="96" cy="96" r="54" stroke="#06b6d4" stroke-width="10" stroke-dasharray="254.47 84.82"/>
+      <circle cx="96" cy="96" r="41" stroke="#f59e0b" stroke-width="10" stroke-dasharray="193.21 64.40" opacity="0.95"/>
+      <circle cx="96" cy="96" r="28" stroke="#f43f5e" stroke-width="10" stroke-dasharray="131.95 43.98" opacity="0.95"/>
+    </g>
+    <circle cx="96" cy="96" r="12" fill="#06b6d4"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="440" y="174" fill="#67e8f9" font-size="30" font-weight="700" letter-spacing="8">LIGHTNOW</text>
+    <text x="432" y="286" fill="#ffffff" font-size="104" font-weight="750" letter-spacing="-3">CLI</text>
+    <text x="438" y="351" fill="#cbd5e1" font-size="32" font-weight="450">Discover MCP servers. Sync every client.</text>
+    <text x="438" y="405" fill="#94a3b8" font-size="24">One trusted MCP runtime across every AI client.</text>
+
+    <g font-size="20" font-weight="650">
+      <rect x="438" y="466" width="182" height="48" rx="24" fill="#083c49" stroke="#06b6d4" stroke-opacity="0.55"/>
+      <text x="529" y="497" fill="#a5f3fc" text-anchor="middle">MCP discovery</text>
+      <rect x="636" y="466" width="226" height="48" rx="24" fill="#083c49" stroke="#06b6d4" stroke-opacity="0.55"/>
+      <text x="749" y="497" fill="#a5f3fc" text-anchor="middle">Client config sync</text>
+      <rect x="878" y="466" width="172" height="48" rx="24" fill="#083c49" stroke="#06b6d4" stroke-opacity="0.55"/>
+      <text x="964" y="497" fill="#a5f3fc" text-anchor="middle">Apache-2.0</text>
+    </g>
+  </g>
+</svg>
