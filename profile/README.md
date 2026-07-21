@@ -1,4 +1,4 @@
-![LightNow — one runtime for every AI client](https://raw.githubusercontent.com/lightnow-ai/.github/master/assets/profile/lightnow-hero.png)
+![LightNow — one runtime for every AI client](https://raw.githubusercontent.com/lightnow-ai/.github/main/assets/profile/lightnow-hero.png)
 
 **One trusted MCP runtime across every AI client.**
 
