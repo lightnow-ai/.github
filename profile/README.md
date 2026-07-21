@@ -1,8 +1,4 @@
-<div align="center">
-
-<img src="../assets/profile/lightnow-hero.png" alt="LightNow — one runtime for every AI client" width="100%">
-
-<br>
+![LightNow — one runtime for every AI client](https://raw.githubusercontent.com/lightnow-ai/.github/master/assets/profile/lightnow-hero.png)
 
 **One trusted MCP runtime across every AI client.**
 
@@ -12,8 +8,6 @@ Codex, Claude, Cursor, VS Code, Gemini CLI, Antigravity, and other MCP clients.
 [![Get started](https://img.shields.io/badge/Get_started-06B6D4?style=for-the-badge&labelColor=083344)](https://docs.lightnow.ai/getting-started/quickstart)
 [![Explore MCP servers](https://img.shields.io/badge/Explore_MCP_servers-0E7490?style=for-the-badge&labelColor=083344)](https://lightnow.ai/servers)
 [![Read the docs](https://img.shields.io/badge/Read_the_docs-F59E0B?style=for-the-badge&labelColor=422006)](https://docs.lightnow.ai)
-
-</div>
 
 ## Your MCP stack, without the sprawl
 
@@ -47,8 +41,4 @@ for alternative installation methods and configuration options.
 | [**LightNow CLI**](https://github.com/lightnow-ai/lightnow-cli) | Sign in, discover MCP servers, and sync managed configurations to local clients. |
 | [**LightNow Local Proxy**](https://github.com/lightnow-ai/lightnow-proxy) | Resolve profiles, secrets, and upstream MCP servers at runtime through one local entry. |
 
-<div align="center">
-
 [Website](https://lightnow.ai) · [Quickstart](https://docs.lightnow.ai/getting-started/quickstart) · [Documentation](https://docs.lightnow.ai)
-
-</div>
