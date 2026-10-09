@@ -1,0 +1,24 @@
+name: Feature
+description: Propose a capability with a clear goal and completion criteria.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or goal
+      description: Describe the need, intended behavior, and who benefits.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Add relevant examples, supporting links, or constraints if needed.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: State a few testable outcomes that establish when the feature is complete.
+    validations:
+      required: true

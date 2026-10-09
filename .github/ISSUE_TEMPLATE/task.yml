@@ -1,0 +1,24 @@
+name: Task
+description: Describe maintenance or other work with a concrete outcome.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or goal
+      description: Describe the work and its intended outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Add relevant references, current state, or constraints if needed.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: State a few testable outcomes that establish when the task is complete.
+    validations:
+      required: true
