@@ -1,0 +1,24 @@
+name: Bug
+description: Report unexpected behavior with reproduction steps and a clear expected outcome.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or goal
+      description: Describe actual and expected behavior, and relevant user impact.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide reproduction steps, environment/version, and links to relevant evidence. Date observations when freshness matters.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: State a few testable outcomes that establish when the bug is fixed.
+    validations:
+      required: true
