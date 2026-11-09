@@ -1,44 +1,71 @@
-![LightNow — one runtime for every AI client](https://raw.githubusercontent.com/lightnow-ai/.github/main/assets/profile/lightnow-hero.png)
+![LightNow: Your AI. Your tools. Your rules. Your choice.](https://raw.githubusercontent.com/lightnow-ai/.github/main/assets/profile/lightnow-hero.png)
 
-**One trusted MCP runtime across every AI client.**
+Connect your AI assistants to the tools and knowledge you work with through
+the **Model Context Protocol (MCP)**. Bring your connections into one setup,
+use it in supported clients such as Codex, Claude and Cursor, and choose which
+actions your AI may take.
 
-Discover trusted MCP servers, manage one runtime profile, and connect it to
-Codex, Claude, Cursor, VS Code, Gemini CLI, Antigravity, and other MCP clients.
+[Get started](https://docs.lightnow.ai/getting-started/github-with-codex/)
+· [Explore the product](https://lightnow.ai/features)
+· [Browse MCP servers](https://lightnow.ai/servers)
 
-[![Get started](https://img.shields.io/badge/Get_started-06B6D4?style=for-the-badge&labelColor=083344)](https://docs.lightnow.ai/getting-started/quickstart)
-[![Explore MCP servers](https://img.shields.io/badge/Explore_MCP_servers-0E7490?style=for-the-badge&labelColor=083344)](https://lightnow.ai/servers)
-[![Read the docs](https://img.shields.io/badge/Read_the_docs-F59E0B?style=for-the-badge&labelColor=422006)](https://docs.lightnow.ai)
+## One setup. Your choice of AI assistant.
 
-## Your MCP stack, without the sprawl
+- **Connect your tools.** Find public MCP servers, inspect their tools and
+  versions, and add your own private servers.
+- **Share a working setup.** Runtime profiles bring server connections and
+  settings together. Start with personal profiles; Team adds shared profiles
+  and company sign-in.
+- **Set the rules.** Enterprise adds individual tool allow and deny policies.
+  In the managed Proxy path, LightNow checks the policy before forwarding a
+  call to the MCP server.
+- **Understand what ran.** Enterprise runtime analysis shows reported calls,
+  errors and duration. It requires compatible clients with reporting enabled.
 
-MCP configurations multiply quickly. LightNow turns them into one managed
-runtime that stays consistent across every client and machine.
+LightNow is vendor-neutral and hosted in Germany. Compare the full capabilities
+and requirements on the [pricing page](https://lightnow.ai/pricing).
 
-| 🔎 Discover | 🧭 Manage | ⚡ Connect |
-| --- | --- | --- |
-| Find MCP servers in a searchable public registry. | Choose profiles, secrets, and organization policy once. | Give every client one LightNow entry through the Local Proxy. |
+## Try GitHub in Codex
 
-## From zero to connected
+[Connect a repository and ask about its open issues](https://docs.lightnow.ai/getting-started/github-with-codex/).
+The guide covers installation, GitHub access, keeping existing MCP connections,
+and verifying the result.
 
-Create a free [LightNow account](https://lightnow.ai), then connect your first
-client:
+On macOS, install the local tools and sign in:
 
 ```bash
 brew tap lightnow-ai/tap
 brew install lightnow-cli lightnow-proxy
 lightnow login
-lightnow sync --client codex --local-proxy
 ```
 
-Restart your client after syncing. Replace `codex` with another supported
-client, or follow the [quickstart](https://docs.lightnow.ai/getting-started/quickstart)
-for alternative installation methods and configuration options.
+Before syncing, add GitHub to your Runtime profile and configure repository
+access. If Codex already has MCP connections you want to keep, preview and
+import them first with `lightnow import-config --client codex --dry-run` and
+`lightnow import-config --client codex`. Proxy sync replaces direct MCP entries
+with one LightNow entry and keeps a backup.
 
-## Built in the open
+Then connect the profile:
 
-| Project | What it does |
+```bash
+lightnow sync --client codex --profile default --local-proxy
+```
+
+Restart Codex, start a new session and verify that the GitHub tools are
+available. Follow the [full guide](https://docs.lightnow.ai/getting-started/github-with-codex/)
+for connection checks, other installation methods and troubleshooting.
+
+## Open-source tools
+
+| Project | Purpose |
 | --- | --- |
-| [**LightNow CLI**](https://github.com/lightnow-ai/lightnow-cli) | Sign in, discover MCP servers, and sync managed configurations to local clients. |
-| [**LightNow Local Proxy**](https://github.com/lightnow-ai/lightnow-proxy) | Resolve profiles, secrets, and upstream MCP servers at runtime through one local entry. |
+| [LightNow CLI](https://github.com/lightnow-ai/lightnow-cli) | Sign in, manage Runtime profiles and sync connections to supported AI clients. |
+| [LightNow Proxy](https://github.com/lightnow-ai/lightnow-proxy) | Run alongside your AI client and connect it to local or reachable MCP servers. |
+| [Homebrew tap](https://github.com/lightnow-ai/homebrew-tap) | Install the CLI and Proxy on macOS. |
 
-[Website](https://lightnow.ai) · [Quickstart](https://docs.lightnow.ai/getting-started/quickstart) · [Documentation](https://docs.lightnow.ai)
+LightNow is a product by **ApiTree**.
+
+[Website](https://lightnow.ai)
+· [Documentation](https://docs.lightnow.ai/)
+· [MCP Weekly](https://lightnow.ai/weekly)
+· [APITree on LinkedIn](https://www.linkedin.com/company/apitree/)
