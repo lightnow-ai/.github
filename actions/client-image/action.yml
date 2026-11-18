@@ -1,0 +1,49 @@
+name: Publish qualified client image
+description: Publish an independent runtime image for an original LightNow product wheel.
+inputs:
+  source-run:
+    description: Successful product CI or release run containing python-distributions
+    required: true
+  token:
+    description: Repository-scoped Actions and Packages token
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Allocate isolated build directory
+      id: temp
+      shell: bash
+      run: echo "directory=$(mktemp -d "${RUNNER_TEMP}/client-image.XXXXXXXX")" >> "$GITHUB_OUTPUT"
+    - name: Verify original producer and download its wheel archive
+      id: source
+      uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+      env:
+        ACTION_DIR: ${{ github.action_path }}
+        SOURCE_RUN: ${{ inputs.source-run }}
+        DIRECTORY: ${{ steps.temp.outputs.directory }}
+      with:
+        github-token: ${{ inputs.token }}
+        script: |
+          await require(process.env.ACTION_DIR + '/distribution.cjs')({
+            github, context, core, sourceRun: process.env.SOURCE_RUN, directory: process.env.DIRECTORY
+          })
+    - name: Package and verify the immutable runtime
+      shell: bash
+      env:
+        ACTION_DIR: ${{ github.action_path }}
+        DIRECTORY: ${{ steps.temp.outputs.directory }}
+        ARCHIVE_SHA: ${{ steps.source.outputs.artifact-sha }}
+        GHCR_TOKEN: ${{ inputs.token }}
+      run: bash "$ACTION_DIR/publish.sh"
+    - name: Upload the image receipt
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+      with:
+        name: client-product-image
+        path: ${{ steps.temp.outputs.directory }}/client-product-image.json
+        if-no-files-found: error
+    - name: Remove temporary files
+      if: always() && steps.temp.outputs.directory != ''
+      shell: bash
+      env:
+        DIRECTORY: ${{ steps.temp.outputs.directory }}
+      run: rm -rf -- "$DIRECTORY"
