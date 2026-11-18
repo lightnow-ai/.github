@@ -1,0 +1,16 @@
+name: Client image contract
+on:
+  pull_request:
+    paths:
+      - actions/client-image/**
+      - .github/workflows/client-image-contract.yml
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - run: python3 -B -m unittest discover -s actions/client-image
+      - run: node --test actions/client-image/distribution.test.cjs
+      - run: shellcheck actions/client-image/publish.sh
